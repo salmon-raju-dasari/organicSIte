@@ -1,3 +1,7 @@
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+}
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif !important;
@@ -52,4 +56,13 @@ body {
 }
 .font-size-14 {
     font-size: 14px;
+}
+.text-secondary {
+    color: var(--secondary)
+}
+.text-primary {
+    color: var(--primary)
+}
+.dis-flex {
+    display: flex;
 }
