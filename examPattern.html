@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Exam Pattern
+        </title>
+        <link rel="stylesheet" href="examPattern.css">
+        <script src="examPattern.js"></script>
+    </head>
+    <body class="background">
+        <div id="login-sec" class="login-page">
+            <p>
+                <b>Login to the Examination section</b>
+            </p>
+            <div>
+                <label>username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    value=""
+                >
+            </div>
+            <div>
+                <label>password:</label>
+                <input
+                    value=""
+                    placeholder="Enter your password"
+                    type="password"
+                    id="password"
+                    name="password"
+                >
+            </div>
+            <div>
+                <button onclick="login()">Login to exam</button>
+            </div>
+        </div>
+        <div id="exam-sec" class="exam-section">
+            <div>
+                <p>1. Who invented the javascript?</p>
+                <input type="radio" name="q1" value="Brendan Eich">
+                Brendan Eich
+                <br>
+                <input type="radio" name="q1" value="Mark Zuckerberg">
+                Mark Zuckerberg
+                <br>
+                <input type="radio" name="q1" value="Elon Musk">
+                Elon Musk
+                <br>
+                <input type="radio" name="q1" value="Bill Gates">
+                Bill Gates
+                <br>
+            </div>
+            <div>
+                <p>2. Which is the correct syntax</p>
+                <input type="radio" name="q2" value="let x = 10">
+                let x = 10
+                <br>
+                <input type="radio" name="q2" value="var var = 20">
+                var var = 20
+                <br>
+                <input type="radio" name="q2" value="var let = 30">
+                var let = 30
+                <br>
+                <input type="radio" name="q2" value="x let = 40">
+                x let = 40
+                <br>
+            </div>
+            <button onclick="submit()">Get score</button>
+            <p id="result"></p>
+        </div>
+    </body>
+</html>
